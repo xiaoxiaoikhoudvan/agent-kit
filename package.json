@@ -1,0 +1,29 @@
+{
+  "name": "agent-kit",
+  "version": "1.0.0",
+  "description": "Install shared AI agent rules and skills",
+  "private": true,
+  "type": "module",
+  "bin": {
+    "agent-kit": "./dist/cli.js"
+  },
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "test": "npm run build && node --test",
+    "prepare": "npm run build"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "engines": {
+    "node": ">=20.17"
+  },
+  "dependencies": {
+    "@inquirer/prompts": "^8.6.0",
+    "commander": "^15.0.0"
+  },
+  "devDependencies": {
+    "@types/node": "^26.2.0",
+    "typescript": "^7.0.2"
+  }
+}
